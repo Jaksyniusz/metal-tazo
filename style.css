@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(font/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+	font-family: mySecondFont;
+	src: url(font/Pokemon\ Solid.ttf);
+}
+
+/* Main Code */
+
+:root {
+/* Color palette - Grey Friends */
+	--primary-color: #B0A8B9;
+	--secondary-color: #4B4453;
+	--tertiary-color: #845EC2;
+	--font-color: #FDF7FF;
+}
+
+body {
+	background-color: var(--secondary-color);
+	font-size: 20px;
+	color: var(--font-color);
+	font-family: 'K2D', sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+	margin: 0.5rem auto 2rem;
+	font-family: myFirstFont;
+	letter-spacing: 0.3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+/* Navbar */
+/*.nav {
+	width: 100vw;
+	max-height: 10hv;
+	background-color: var(--tertiary-color);
+	border-bottom: solid 5px var(--secondary-color);
+	overflow: hidden;
+
+}
+
+.dropdown, .collaps {
+	width: 100%;
+	min-height: 5vh;
+	position: relative;
+	text-align: center;
+	-webkit-box-shadow: 0 5px 15px 2px var(--secondary-color);
+	-moz-box-shadow: 0 5px 15px 2px var(--secondary-color);
+	box-shadow: 0 5px 15px 2px var(--secondary-color);
+}
+
+.navlinks, .navi {
+	margin: 0;
+	position: absolute;              
+	top: 50%;
+	left: 50%;                     
+	transform: translate(-50%, -50%);
+	font-size: 1.5rem;
+	text-shadow: 2px 2px var(--secondary-color);
+}
+
+.collaps {
+	border-top: solid 3px var(--secondary-color);
+}
+*/
+
+.navbar {
+	background-color: var(--secondary-color);
+}
+
+.nav-link {
+	color: var(--font-color);
+}
+
+.navbar-brand {
+	font-family: mySecondFont;
+	letter-spacing: 0.3rem;
+	font-size: 1.5rem;
+	color: var(--font-color);
+}
+
+button:active, a:active, a:hover {
+	color: var(--tertiary-color);
+}
+
+
+/* Carousel */
+.carousel-item img {
+	width: 100%;
+	height: 20%;
+}
+
+
+/* Content */
+.main {
+	width: 80%;
+	background-color: var(--primary-color);
+}
+
+/* Paragraph section */
+.description {
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.paragraph {
+	margin: 1em 0;
+}
+
+/* Artists section */ 
+.artists {
+	background-color: var(--secondary-color);
+}
+
+.positioning {
+	padding: 1em 0 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.art {
+	border-radius: 50%;
+	position: relative;
+	background-color: #845EC2;
+	object-fit: cover;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 25px 1px var(--tertiary-color);
+	-moz-box-shadow: 0 0 25px 1px var(--tertiary-color);
+	box-shadow: 0 0 25px 1px var(--tertiary-color);
+	margin: 2rem 1rem;
+}
+
+.artimg {
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.overhover {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1rem 0 2rem;
+	text-align: center;
+}
+
+/* Discography section */
+.card {
+	background-color: var(--tertiary-color);
+	margin: 1em;
+	width: 18rem;
+}
+
+.card-text {
+	font-style: italic;
+	line-height: 2rem;
+}
+
+
+/* Youtube section */
+.video-container {
+	padding: 1.5rem;
+}
+
+.video-container iframe {
+	width: 560px;
+	height: 315px;
+}
+
+/* Footer */
+.page-footer {
+	font-size: 1rem;
+	-webkit-box-shadow: 0 0 15px 1px var(--tertiary-color);
+	-moz-box-shadow: 0 0 15px 1px var(--tertiary-color);
+	box-shadow: 0 0 15px 1px var(--tertiary-color);
+}
+
+.page-footer a {
+	color: var(--tertiary-color);
+}
+
+
+/* Media queries */
+@media screen and (max-width: 480px){
+	.video-container iframe {
+		width: 185px;
+		height: 105px;
+	}
+
+	.art {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+	.video-container iframe {
+		width: 370px;
+		height: 210px;
+	}
+
+}
+
+@media screen and (min-width: 480px){
+	.art {
+		width: 20rem;
+		height: 20rem;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+	.art {
+		width: 10rem;
+		height: 10rem;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+	.card {
+		width: 56rem;
+	}
+
+	.art{
+		transition: box-shadow;
+	}
+
+	.art:hover {
+		-webkit-box-shadow: 0 0 25px 1px var(--font-color);
+		-moz-box-shadow: 0 0 25px 1px var(--font-color);
+		box-shadow: 0 0 25px 1px var(--font-color);
+	}
+	
+	.overhover {
+		background-color: var(--tertiary-color);
+		text-shadow: 2px 2px var(--secondary-color);
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.overlay:hover .overhover {
+		opacity: 0.85;
+	}
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+	.description {
+		text-align: center;
+	}
+
+	.overhover {
+		text-shadow: 2px 2px var(--tertiary-color);
+	}
+
+	.hide {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1600px){
+	.video-container iframe {
+		width: 840px;
+		height: 472px;
+	}
+
+	.art {
+		width: 30rem;
+		height: 30rem;
+	}
+
+}
+
+
+
