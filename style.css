@@ -91,41 +91,11 @@ h3 {
 	font-size: 2rem;
 }
 
+strong {
+	font-weight: 700;
+}
+
 /* Navbar */
-/*.nav {
-	width: 100vw;
-	max-height: 10hv;
-	background-color: var(--tertiary-color);
-	border-bottom: solid 5px var(--secondary-color);
-	overflow: hidden;
-
-}
-
-.dropdown, .collaps {
-	width: 100%;
-	min-height: 5vh;
-	position: relative;
-	text-align: center;
-	-webkit-box-shadow: 0 5px 15px 2px var(--secondary-color);
-	-moz-box-shadow: 0 5px 15px 2px var(--secondary-color);
-	box-shadow: 0 5px 15px 2px var(--secondary-color);
-}
-
-.navlinks, .navi {
-	margin: 0;
-	position: absolute;              
-	top: 50%;
-	left: 50%;                     
-	transform: translate(-50%, -50%);
-	font-size: 1.5rem;
-	text-shadow: 2px 2px var(--secondary-color);
-}
-
-.collaps {
-	border-top: solid 3px var(--secondary-color);
-}
-*/
-
 .navbar {
 	background-color: var(--secondary-color);
 }
@@ -138,6 +108,10 @@ h3 {
 	font-family: mySecondFont;
 	letter-spacing: 0.3rem;
 	font-size: 1.5rem;
+	color: var(--font-color);
+}
+
+a {
 	color: var(--font-color);
 }
 
